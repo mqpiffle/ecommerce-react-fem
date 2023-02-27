@@ -1,0 +1,39 @@
+.header-container {
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.header-left__brand {
+    font-weight: 400;
+}
+
+.header-left__container,
+.header-right__container {
+    gap: 1rem;
+}
+
+.header-left__menu {
+    display: none;
+    list-style: none;
+    color: var(--clr-neut-dk);
+}
+
+@media screen and (min-width: 1440px) {
+    .header-container {
+        padding: 2.5rem 7.5rem;
+    }
+
+    .header-left__container,
+    .header-right__container {
+        gap: 2.5rem;
+    }
+    .header-left__hamburger {
+        display: none;
+    }
+
+    .header-left__menu {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+}

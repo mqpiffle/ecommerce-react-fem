@@ -4,6 +4,8 @@
 *::before,
 *::after {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 :root {
@@ -22,5 +24,35 @@
 
 body {
     font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 400;
     font-size: 16px;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+}
+
+/* GENERIC STYLES */
+
+.flex-row-c {
+    display: flex;
+    align-items: center;
+}
+
+.flex-clm-c {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.5rem;
+}
+
+.avatar {
+    width: 2rem;
 }
