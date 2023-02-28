@@ -6,7 +6,7 @@ const Menu = props => {
             key={idx}
             className='header-left__menu-item'
         >
-            <h4>{item}</h4>
+            <p>{item}</p>
         </li>
     ))
     return <ul className='header-left__menu'>{menuMap}</ul>

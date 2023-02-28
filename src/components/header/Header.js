@@ -1,11 +1,11 @@
 import Menu from './Menu'
 
-import menuIcon from '../images/icon-menu.svg'
-import cartIcon from '../images/icon-cart.svg'
-import avatar from '../images/image-avatar.png'
-import logo from '../images/logo.svg'
+import menuIcon from '../../images/icon-menu.svg'
+import cartIcon from '../../images/icon-cart.svg'
+import avatar from '../../images/image-avatar.png'
+import logo from '../../images/logo.svg'
 
-import '../styles/Header.css'
+import '../../styles/Header.css'
 
 const Header = props => {
     return (
@@ -25,7 +25,9 @@ const Header = props => {
                         alt='logo'
                     />
                 </div>
-                <Menu />
+                <nav>
+                    <Menu />
+                </nav>
             </div>
             <div className='header-right__container flex-row-c'>
                 <button>
