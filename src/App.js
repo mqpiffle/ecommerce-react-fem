@@ -1,9 +1,9 @@
-import Layout from './components/Layout'
+import Product from './components/product/Product'
 
 function App() {
     return (
         <>
-            <Layout />
+            <Product />
         </>
     )
 }

@@ -56,3 +56,9 @@ button {
 .avatar {
     width: 2rem;
 }
+
+/* OVERALL STYLES */
+.main-container {
+    width: min(1440px, 100%);
+    margin: 0 auto;
+}

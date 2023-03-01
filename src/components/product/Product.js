@@ -1,9 +1,11 @@
 import ProductImages from './ProductImages'
 import ProductDescription from './ProductDescription'
 
+import '../../styles/Product.css'
+
 const Product = props => {
     return (
-        <div>
+        <div className='product__container'>
             <ProductImages />
             <ProductDescription />
         </div>

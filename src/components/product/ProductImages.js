@@ -11,19 +11,21 @@ import '../../styles/ProductImages.css'
 const ProductImages = props => {
     const kicksImages = [image1, image2, image3, image4]
     const [selectedImage, setSelectedImage] = useState(kicksImages[0])
-    
-    const handleThumbClick = (idx) => {
+
+    const handleThumbClick = idx => {
         setSelectedImage(kicksImages[idx])
     }
-    
+
     return (
-        <div>
-            <img
-                src={selectedImage}
-                alt='some really sweet kicks'
-            />
+        <div className='product-images__container flex-clm-c'>
+            <div className='product-images__main-image'>
+                <img
+                    src={selectedImage}
+                    alt='some really sweet kicks'
+                />
+            </div>
             <div>
-                <Thumbnails thumbClick={handleThumbClick}/>
+                <Thumbnails thumbClick={handleThumbClick} />
             </div>
         </div>
     )
