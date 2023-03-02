@@ -1,18 +1,24 @@
 .product-images__container {
-    gap: 1rem;
+    max-width: 100%;
+    gap: 2rem;
+    padding: 0 3rem;
 }
 
-.product-images__main-image img {
-    max-width: 100%;
+.product-images__main-image {
+    width: 100%;
     aspect-ratio: 1;
     object-fit: contain;
     border-radius: 1rem;
 }
 
 .product-images__thumbs-container {
-    gap: 1rem;
+    width: 100%;
+    max-width: 100%;
+    gap: 2rem;
 }
 
 .product-images__thumb {
+    object-fit: contain;
+    aspect-ratio: 1;
     border-radius: 0.5rem;
 }

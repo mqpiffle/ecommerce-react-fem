@@ -18,15 +18,12 @@ const ProductImages = props => {
 
     return (
         <div className='product-images__container flex-clm-c'>
-            <div className='product-images__main-image'>
-                <img
-                    src={selectedImage}
-                    alt='some really sweet kicks'
-                />
-            </div>
-            <div>
-                <Thumbnails thumbClick={handleThumbClick} />
-            </div>
+            <img
+                className='product-images__main-image'
+                src={selectedImage}
+                alt='some really sweet kicks'
+            />
+            <Thumbnails thumbClick={handleThumbClick} />
         </div>
     )
 }
