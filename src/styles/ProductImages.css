@@ -1,7 +1,7 @@
 .product-images__container {
-    max-width: 100%;
+    width: min(100vw, 85%);
+    margin: 0 auto;
     gap: 2rem;
-    padding: 0 3rem;
 }
 
 .product-images__main-image {
@@ -13,11 +13,13 @@
 
 .product-images__thumbs-container {
     width: 100%;
-    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
 }
 
 .product-images__thumb {
+    width: 100%;
     object-fit: contain;
     aspect-ratio: 1;
     border-radius: 0.5rem;

@@ -14,6 +14,6 @@ const Thumbnails = props => {
             onClick={() => thumbClick(idx)}
         />
     ))
-    return <div className='product-images__thumbs-container flex-row-c'>{thumbs}</div>
+    return <div className='product-images__thumbs-container' >{thumbs}</div>
 }
 export default Thumbnails

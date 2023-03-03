@@ -1,5 +1,45 @@
 .product-description__container {
-    width: 100%;
-    max-width: 100%;
-    padding: 0 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: min(100vw, 85%);
+    margin: 0 auto;
+    gap: 2rem;
+}
+
+.product-description__brand {
+    color: var(--clr-primary);
+}
+
+.product-description__style {
+    font-size: 3rem;
+}
+
+.product-description__desc {
+    font-size: 1.25rem;
+    color: var(--clr-neut-dk);
+    line-height: 1.5;
+}
+
+.product-description__price-cont {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.product-description__curr-price {
+    font-size: 2rem;
+}
+
+.product-description__discount {
+    padding: 0.125rem 0.5rem;
+    color: var(--clr-primary);
+    background-color: var(--clr-primary-pale);
+    border: 1px solid var(--clr-primary);
+    border-radius: 0.25rem;
+}
+
+.product-description__retail-price {
+    color: var(--clr-neut);
+    text-decoration: line-through;
 }
