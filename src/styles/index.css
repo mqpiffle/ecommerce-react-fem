@@ -59,6 +59,6 @@ button {
 
 /* OVERALL STYLES */
 .main-container {
-    width: min(1440px, 100%);
+    width: min(1440px, 100vw);
     margin: 0 auto;
 }
