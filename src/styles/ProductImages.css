@@ -4,10 +4,25 @@
     gap: 2rem;
 }
 
+.product-images__main-image-container {
+    position: relative;
+}
+
 .product-images__main-image {
     width: 100%;
     aspect-ratio: 1;
     object-fit: contain;
+}
+
+.image-nav {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .product-images__thumbs-container {

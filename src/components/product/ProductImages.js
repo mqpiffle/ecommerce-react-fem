@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import ImageNav from './ImageNav'
 import Thumbnails from './Thumbnails'
 
 import image1 from '../../images/image-product-1.jpg'
@@ -18,11 +19,14 @@ const ProductImages = props => {
 
     return (
         <div className='product-images__container flex-clm-c'>
-            <img
-                className='product-images__main-image'
-                src={selectedImage}
-                alt='some really sweet kicks'
-            />
+            <div className='product-images__main-image-container'>
+                <img
+                    className='product-images__main-image'
+                    src={selectedImage}
+                    alt='some really sweet kicks'
+                />
+                <ImageNav />
+            </div>
             <Thumbnails thumbClick={handleThumbClick} />
         </div>
     )

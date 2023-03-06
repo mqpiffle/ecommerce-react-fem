@@ -36,3 +36,18 @@
     width: 0.5rem;
     height: 0.5rem;
 }
+
+@media screen and (min-width: 920px) {
+    .atc-interface__container {
+        flex-direction: row;
+    }
+
+    .atc-interface__counter {
+        width: auto;
+        flex-grow: .5;
+    }
+
+    .atc-interface__atc-btn {
+        flex-grow: 1;
+    }
+}
