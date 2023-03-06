@@ -8,20 +8,30 @@
 }
 
 .product-description__brand {
+    font-size: clamp(0.875rem, 0.875rem + 0.5vw, 1rem);
+    letter-spacing: 0.1rem;
     color: var(--clr-primary);
 }
 
 .product-description__style {
-    font-size: 3rem;
+    font-size: clamp(1.5rem, 1.5rem + 2vw, 3rem);
 }
 
 .product-description__desc {
-    font-size: 1.25rem;
+    font-size: clamp(0.75rem, 0.75rem + 1vw, 1.25rem);
+    font-weight: 400;
     color: var(--clr-neut-dk);
     line-height: 1.5;
 }
 
 .product-description__price-cont {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.product-description__price-sub-cont {
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -32,14 +42,21 @@
 }
 
 .product-description__discount {
+    font-weight: 700;
     padding: 0.125rem 0.5rem;
     color: var(--clr-primary);
     background-color: var(--clr-primary-pale);
-    border: 1px solid var(--clr-primary);
     border-radius: 0.25rem;
 }
 
 .product-description__retail-price {
+    font-weight: 700;
     color: var(--clr-neut);
     text-decoration: line-through;
+}
+
+@media screen and (min-width: 920px) {
+    .product__container {
+        border-top: 2px solid var(--clr-neut);
+    }
 }

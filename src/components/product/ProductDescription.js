@@ -1,3 +1,5 @@
+import AddToCartInterface from './AddToCartInterface'
+
 import '../../styles/ProductDescription.css'
 
 const ProductDescrption = props => {
@@ -13,13 +15,13 @@ const ProductDescrption = props => {
                 withstand everything the weather can offer.
             </p>
             <div className='product-description__price-cont'>
-                <h2 className='product-description__curr-price'>$125.00</h2>
-                <h4 className='product-description__discount'>50%</h4>
+                <div className='product-description__price-sub-cont'>
+                    <h2 className='product-description__curr-price'>$125.00</h2>
+                    <h4 className='product-description__discount'>50%</h4>
+                </div>
+                <p className='product-description__retail-price'>$250.00</p>
             </div>
-            <p className='product-description__retail-price'>$250.00</p>
-            <div className='product-description__btn-container'>
-                <div>MAYBE A SEPARATE COMPONENT</div>
-            </div>
+            <AddToCartInterface />
         </div>
     )
 }
